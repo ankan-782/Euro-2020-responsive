@@ -13,7 +13,7 @@ body {
     height: 100%;
     background-color: #2D25A0;
     padding-top: 42px;
-    padding-bottom: 86px;
+    padding-bottom: 100px;
 }
 .menu-bar {
     display: flex;
@@ -32,7 +32,7 @@ body {
     transition: 0.2s ease-in-out;
 }
 .menu-items a:hover {
-    color: #3DBAFD;
+    color: #E02C6D;
     transition: 0.2s ease-in-out;
 }
 .login-button a {
@@ -60,6 +60,7 @@ body {
     font-size: 64px;
     font-weight: 700;
     color: #FFFFFF;
+    margin-top: 70px;
     margin-bottom: 27px;
 }
 .banner-title a {
@@ -82,7 +83,7 @@ body {
     transition: 0.2s ease-in-out;
 }
 .banner-photo img:hover {
-    transform: scale(0.95);
+    transform: translate(-20px, -20px);
     transition: 0.2s ease-in-out;
 }
 /* -----------------------
@@ -120,6 +121,80 @@ body {
 .article-details .article-info p{
     color: #6C6C6C;
 }
+/* highlights section styles */
+.highlights-container {
+    padding: 10%;
+}
+.highlights {
+    display: flex;
+    align-items: center;
+}
+.highlights-info {
+    padding-left: 5%;
+}
+.highlights-title h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: black;
+    margin: 8px 0px;
+}
+.highlights-title p {
+    width: 80%;
+    color: #6C6C6C;
+    font-weight: 400;
+    line-height: 28px;
+}
+.highlights-link {
+    margin-top: 30px;
+}
+.highlights-link a {
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: 0.2s ease-in-out;
+}
+.highlights-link a:hover {
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
+.highlights-link a .fa-arrow-right {
+    margin-left: 10px;
+}
+.highlights-photo img {
+    width: 85%;
+    float: right;
+    transition: 0.2s ease-in-out;
+    padding-right: 5%;
+}
+.highlights-photo img:hover {
+    transform: scale(0.95);
+    transition: 0.2s ease-in-out;
+}
+/* footer section styles */
+.footer-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0px 70px 0px;
+}
+.footer-thumbnail img {
+    width: 500px;
+}
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+}
+.social-links a {
+    text-decoration: none;
+    color: #E02C6D;
+    font-size: 30px;
+}
+.footer-title p {
+    text-align: center;
+    font-size: 25px;
+}
 /* ------------------
     Media Queries
 -------------------- */
@@ -140,7 +215,7 @@ body {
         align-items: center;
     }
     .banner-title h1 {
-        font-size: 36px;
+        font-size: 40px;
     }
     .banner-photo img {
         width: 329px;
@@ -155,36 +230,80 @@ body {
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 27px;
     }
+    /* highlights section style */
+    .highlights-container {
+        padding: 15px;
+    }
+    .highlights {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+    .highlights-info {
+        padding-left: 0;
+    }
+    .highlights-title h1 {
+        font-size: 30px;
+        font-weight: 700;
+        color: black;
+        margin: 8px 0px;
+    }
+    .highlights-title p {
+        width: 100%;
+    }
+    .highlights-photo img {
+        width: 100%;
+        padding: 0;
+        float: left;
+    }
+    /* footer styles */
+    .footer-section-container {
+        padding: 0px 0px 50px 0px;
+    }
+    .footer-thumbnail {
+        padding: 0% 15%;
+    }
+    .footer-thumbnail img {
+        width: 100%;
+    }
+    .social-links a {
+        font-size: 25px;
+    }
+    .footer-title {
+        padding: 10px;
+    }
+    .footer-title p {
+        font-size: 15px;
+    }
 }
 /* Tablet devices */
-@media only screen and (min-width: 668px) and (max-width: 992px) {
-    .head-section-container {
-        width: 100%;
-        height: 100%;
-        padding-bottom: 20px;
-    }
+@media only screen and (min-width: 688px) and (max-width: 992px) {
     .menu-bar {
-        margin-left: 50px;
+        margin: 0px 30px;
     }
     .menu-items a {
-        font-size: 10px;
+        font-size: 12px;
         margin-right: 20px;
     }
     .login-button a {
-        font-size: 10px;
+        font-size: 12px;
     }
     .banner {
-        margin: 45px 50px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
     .banner-title h1 {
         font-size: 25px;
     }
     .banner-title a {
-        font-size: 14px;
+        font-size: 12px;
+    }
+    .banner-photo {
+        width: 500px;
     }
     .banner-photo img {
         width: 100%;
-        height: 100%;
+        float: right;
     }
     /* article section style */
     .articles {
@@ -193,9 +312,36 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 27px;
     }
+    /* highlightes section style */
+    .highlights-container {
+        padding: 30px;
+    }
+    .highlights {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+    .highlights-info {
+        padding-left: 0;
+    }
+    .highlights-title h1 {
+        font-size: 40px;
+        font-weight: 700;
+        color: black;
+        margin: 8px 0px;
+    }
+    .highlights-title p {
+        width: 100%;
+    }
+    .highlights-photo img {
+        width: 100%;
+        padding: 0;
+        float: left;
+    }
 }
-/* for broken screen element on some devices screen size*/
-@media only screen and (min-width: 992px) and (max-width: 1082px) {
+/* for broken screen element on some devices screen size */
+@media only screen and (min-width: 992px) and (max-width: 1090px) {
+    /* header styles */
     .menu-items a {
         font-size: 13px;
         margin-right: 36px;
@@ -204,13 +350,38 @@ body {
         font-size: 13px;
     }
     .banner {
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 15px;
     }
     .banner-title h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
-    /* article section style */
+    /* article section style*/
     .articles {
         width: 80%;
     }
-}
+    /* highlightes section style */
+    .highlights {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+    }
+    .highlights-info {
+        padding: 0;
+    }
+    .highlights-title h1 {
+        font-size: 30px;
+        font-weight: 700;
+        color: black;
+        margin: 8px 0px;
+    }
+    .highlights-title p {
+        width: 100%;
+    }
+    .highlights-photo img {
+        width: 100%;
+        padding: 0;
+        float: right;
+    }
+} 
