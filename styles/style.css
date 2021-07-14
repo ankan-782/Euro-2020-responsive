@@ -162,7 +162,7 @@ body {
     margin-left: 10px;
 }
 .highlights-photo img {
-    width: 85%;
+    width: 100%;
     float: right;
     transition: 0.2s ease-in-out;
     padding-right: 5%;
@@ -190,6 +190,11 @@ body {
     text-decoration: none;
     color: #E02C6D;
     font-size: 30px;
+    transition: 0.2s ease-in-out;
+}
+.social-links a:hover {
+    color: #6C6C6C;
+    transition: 0.2s ease-in-out;
 }
 .footer-title p {
     text-align: center;
